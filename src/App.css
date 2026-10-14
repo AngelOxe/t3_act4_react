@@ -1,0 +1,236 @@
+
+.app {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.encabezado {
+  background-color: white;
+  padding: 35px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.encabezado h1 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.encabezado p {
+  color: #64748b;
+}
+
+
+.lista-tareas {
+  background-color: white;
+  margin-top: 25px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.lista-tareas h2 {
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.tarea {
+  background-color: #f8fafc;
+  padding: 18px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border-left: 4px solid #2563eb;
+}
+
+.tarea h3 {
+  margin: 0 0 8px 0;
+  color: #1f2937;
+}
+
+.tarea p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+
+/* Diseño de cada tarea */
+.tarea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.tarea-contenido {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Tareas completadas */
+.tarea-completada {
+  background-color: #ecfdf5;
+  border-left-color: #10b981;
+}
+
+.tarea-completada h3 {
+  text-decoration: line-through;
+  color: #64748b;
+}
+
+/* Botón para completar tareas */
+.boton-estado {
+  padding: 10px 15px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.boton-estado:hover {
+  background-color: #1d4ed8;
+}
+
+.tarea-completada .boton-estado {
+  background-color: #64748b;
+}
+
+/* Contador */
+.contador {
+  color: #475569;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* Mensaje al completar todas las tareas */
+.mensaje-exito {
+  background-color: #dcfce7;
+  color: #166534;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 480px) {
+  .tarea {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+
+/* Seccion del formulario */
+.formulario-seccion {
+  background-color: white;
+  margin-top: 25px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.formulario-seccion h2 {
+  color: #1f2937;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Distribucion de los campos */
+.formulario-tarea {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  align-items: end;
+  gap: 15px;
+}
+
+.campo-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.campo-formulario label {
+  color: #475569;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.campo-formulario input {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.campo-formulario input:focus {
+  outline: 2px solid #93c5fd;
+  border-color: #2563eb;
+}
+
+/* Boton para agregar */
+.boton-agregar {
+  padding: 12px 16px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.boton-agregar:hover {
+  background-color: #1d4ed8;
+}
+
+/* Grupo de botones de cada tarea */
+.acciones-tarea {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.boton-eliminar {
+  padding: 10px 15px;
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.boton-eliminar:hover {
+  background-color: #fecaca;
+}
+
+/* Mensaje cuando no hay tareas */
+.mensaje-vacio {
+  padding: 20px;
+  color: #64748b;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Adaptacion para celulares */
+@media (max-width: 650px) {
+  .formulario-tarea {
+    grid-template-columns: 1fr;
+  }
+
+  .acciones-tarea {
+    width: 100%;
+  }
+
+  .acciones-tarea button {
+    flex: 1;
+  }
+}
