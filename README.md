@@ -1,16 +1,36 @@
-# React + Vite
+# StudyTask - Aplicación de tareas con React
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Descripción del proyecto
 
-Currently, two official plugins are available:
+StudyTask es una mini aplicación web desarrollada con React y Vite para practicar los fundamentos de React mediante un administrador de tareas sencillo. La aplicación permite agregar nuevas tareas, marcarlas como completadas y eliminarlas. También muestra información sobre las tareas pendientes y actualiza la interfaz según las acciones del usuario.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tecnologías utilizadas
 
-## React Compiler
+- React
+- Vite
+- JavaScript
+- CSS
+- Git y GitHub
+- GitHub Pages
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Preguntas de aprendizaje
 
-## Expanding the Oxlint configuration
+### a) ¿Qué diferencia hay entre props y state en React?
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Las props permiten pasar información de un componente a otro, mientras que el state guarda información que puede cambiar durante el uso de la aplicación.
+
+### b) ¿Por qué es importante usar una key al renderizar una lista de elementos?
+
+La key permite que React identifique cada elemento de la lista y detecte cuáles se agregaron, cambiaron o eliminaron para actualizar la interfaz correctamente.
+
+### c) ¿Qué hace useState y dónde lo usaste en tu mini aplicación?
+
+useState es un hook de React que permite guardar y actualizar información dentro de un componente. Lo utilizamos para manejar la lista de tareas y actualizarla cuando se agregan, completan o eliminan elementos.
+
+### d) Enlace del repositorio de GitHub
+
+https://github.com/AngelOxe/t3_act4_react
+
+### e) Enlace del proyecto desplegado en GitHub Pages
+
+https://angeloxe.github.io/t3_act4_react/

@@ -17,18 +17,6 @@ function App() {
       titulo: 'Realizar práctica de redes',
       materia: 'Conmutación y Enrutamiento',
       completada: false
-    },
-    {
-      id: 3,
-      titulo: 'Preparar reporte',
-      materia: 'Programación Lógica',
-      completada: false
-    },
-    {
-      id: 4,
-      titulo: 'Investigar sobre bases de datos',
-      materia: 'Software para Toma de Decisiones',
-      completada: false
     }
   ])
 
